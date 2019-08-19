@@ -14,7 +14,6 @@ Das Modul stellt überlaufende Zähler als kontinuierliche Zähler dar.
 ### 1. Funktionsumfang
 
 * Berechnet den Gesamtwert einer Variable und zählt diese hoch, obwohl das Gerät einen Überlauf hat.
-* Erstellt ein Ereignis, welches auf Variablenänderung der Quellvariable reagiert.
 
 ### 2. Voraussetzungen
 
