@@ -23,6 +23,7 @@
 			//Create our trigger
 			if(IPS_VariableExists($this->ReadPropertyInteger("SourceVariable"))) {
 				$this->RegisterMessage($this->ReadPropertyInteger("SourceVariable"), VM_UPDATE);
+				//Deleting events used in legacy
 				$eid = @IPS_GetObjectIDByIdent("SourceTrigger", $this->InstanceID);
 				if($eid) {
 					IPS_DeleteEvent($this->GetIDForIdent("SourceTrigger"));
@@ -45,7 +46,8 @@
 		}
 	
 		public function MessageSink($TimeStamp, $SenderID, $Message, $Data)
-		{
+		{	
+			//VM_UPDATE
 			$this->Update($Data[2], $Data[0]);
 		}
 	}
