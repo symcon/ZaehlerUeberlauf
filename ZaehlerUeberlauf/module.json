@@ -10,5 +10,6 @@
 	"parentRequirements": [],
 	"childRequirements": [],
 	"implemented": [],
-	"prefix": "ZUL"
+	"prefix": "ZUL",
+	"url": "https://github.com/symcon/ZaehlerUeberlauf/tree/master/ZaehlerUeberlauf"
 }
