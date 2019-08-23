@@ -22,30 +22,18 @@
 			
 			//Create our trigger
 			if(IPS_VariableExists($this->ReadPropertyInteger("SourceVariable"))) {
+				$this->RegisterMessage($this->ReadPropertyInteger("SourceVariable"), VM_UPDATE);
+				//Deleting events used in legacy
 				$eid = @IPS_GetObjectIDByIdent("SourceTrigger", $this->InstanceID);
-				if($eid === false) {
-					$eid = IPS_CreateEvent(0 /* Trigger */);
-					IPS_SetParent($eid, $this->InstanceID);
-					IPS_SetIdent($eid, "SourceTrigger");
-					IPS_SetName($eid, "Trigger for #".$this->ReadPropertyInteger("SourceVariable"));
+				if($eid) {
+					IPS_DeleteEvent($this->GetIDForIdent("SourceTrigger"));
 				}
-				IPS_SetEventTrigger($eid, 0, $this->ReadPropertyInteger("SourceVariable"));
-				IPS_SetEventScript($eid, "ZUL_Update(\$_IPS['TARGET'], \$_IPS['OLDVALUE'], \$_IPS['VALUE']);");
-				IPS_SetEventActive($eid, true);
 			}
 			
 		}
 	
-		/**
-		* This function will be available automatically after the module is imported with the module control.
-		* Using the custom prefix this function will be callable from PHP and JSON-RPC through:
-		*
-		* ZUL_Update($id);
-		*
-		*/
-		public function Update(int $OldValue, int $Value)
+		private function Update(int $OldValue, int $Value)
 		{
-			
 			if (($Value - $OldValue) < 0) {
 				$diff = $this->ReadPropertyInteger("MaximumValue") + 1 - $OldValue + $Value;
 			} else {
@@ -54,10 +42,14 @@
 			
 			//update value
 			SetValue($this->GetIDForIdent("Counter"), GetValue($this->GetIDForIdent("Counter")) + $diff);
-			
 		
 		}
 	
+		public function MessageSink($TimeStamp, $SenderID, $Message, $Data)
+		{	
+			//VM_UPDATE
+			$this->Update($Data[2], $Data[0]);
+		}
 	}
 
 ?>
