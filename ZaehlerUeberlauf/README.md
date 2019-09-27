@@ -1,7 +1,7 @@
 # Zählerüberlauf
 Das Modul stellt überlaufende Zähler als kontinuierliche Zähler dar.
 
-### Inhaltverzeichnis
+### Inhaltsverzeichnis
 
 1. [Funktionsumfang](#1-funktionsumfang)
 2. [Voraussetzungen](#2-voraussetzungen)
@@ -17,17 +17,17 @@ Das Modul stellt überlaufende Zähler als kontinuierliche Zähler dar.
 
 ### 2. Voraussetzungen
 
-- IP-Symcon ab Version 4.x
+- IP-Symcon ab Version 4.2
 
 ### 3. Software-Installation
 
-* Über den Modul Store das Modul Zähler-Überlauf installieren.
-* Alternativ über das Modul Control folgende URL hinzufügen:
-´https://github.com/symcon/ZaehlerUeberlauf`
+* Über den Module Store das Modul Zähler-Überlauf installieren.
+* Alternativ über das Module Control folgende URL hinzufügen:
+`https://github.com/symcon/ZaehlerUeberlauf`
 
 ### 4. Einrichten der Instanzen in IP-Symcon
 
-- Unter "Instanz hinzufügen" ist das 'Zählerüberlauf'-Modul unter dem Hersteller '(Sonstige)' aufgeführt.  
+- Unter "Instanz hinzufügen" ist das 'Zählerüberlauf'-Modul unter dem Hersteller '(Gerät)' aufgeführt.  
 
 __Konfigurationsseite__:
 
@@ -48,7 +48,7 @@ Counter | Float | Fortlaufend hochzählender Wert.
 
 ##### Profile:
 
-Es werden keine zusätzlichen Profile hinzugefügt
+Es werden keine zusätzlichen Profile hinzugefügt.
 
 ### 6. WebFront
 
