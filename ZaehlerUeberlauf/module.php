@@ -20,10 +20,15 @@ declare(strict_types=1);
 
             //Never delete this line!
             parent::ApplyChanges();
-
+            //Deleting references in order to re-add them
+            foreach ($this->GetReferenceList() as $referenceID) {
+                $this->UnregisterReference($referenceID);
+            }
             //Create our trigger
-            if (IPS_VariableExists($this->ReadPropertyInteger('SourceVariable'))) {
-                $this->RegisterMessage($this->ReadPropertyInteger('SourceVariable'), VM_UPDATE);
+            $sourceVariable = $this->ReadPropertyInteger('SourceVariable');
+            if (IPS_VariableExists($sourceVariable)) {
+                $this->RegisterMessage($sourceVariable, VM_UPDATE);
+                $this->RegisterReference($sourceVariable);
                 //Deleting events used in legacy
                 $eid = @IPS_GetObjectIDByIdent('SourceTrigger', $this->InstanceID);
                 if ($eid) {
