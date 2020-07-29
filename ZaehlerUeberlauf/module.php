@@ -12,7 +12,7 @@ declare(strict_types=1);
             $this->RegisterPropertyInteger('SourceVariable', 0);
             $this->RegisterPropertyInteger('MaximumValue', 999999);
 
-            $this->RegisterVariableFloat('Counter', 'Counter', '', 1);
+            $this->RegisterVariableFloat('Counter', $this->Translate('Counter'), '', 1);
         }
 
         public function ApplyChanges()

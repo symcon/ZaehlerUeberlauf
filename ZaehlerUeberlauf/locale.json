@@ -2,7 +2,8 @@
 	"translations": {
 		"de": { 
 			"Source": "Quelle",
-			"Maximum value": "Maximalwert"
+			"Maximum value": "Maximalwert",
+			"Counter": "Zähler"
 		}
 	}
 }

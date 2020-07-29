@@ -45,7 +45,7 @@ Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzeln
 
 Name    | Typ   | Beschreibung
 ------- | ----- | ----------------
-Counter | Float | Fortlaufend hochzählender Wert.
+Zähler  | Float | Fortlaufend hochzählender Wert.
 
 ##### Profile:
 
