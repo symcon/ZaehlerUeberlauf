@@ -45,7 +45,7 @@ Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzeln
 
 Name    | Typ   | Beschreibung
 ------- | ----- | ----------------
-Counter | Float | Fortlaufend hochzählender Wert.
+Zähler  | Float | Fortlaufend hochzählender Wert.
 
 ##### Profile:
 
@@ -57,8 +57,4 @@ Es werden keine zusätzlichen Profile hinzugefügt.
 
 ### 7. PHP-Befehlsreferenz
 
-`boolean ZUL_Update(integer $InstanzID, float $OldValue, float $Value);`  
-Berechnet über $OldValue und $Value den Überlauf und setzt den Wert Counter.  
-Die Funktion liefert keinerlei Rückgabewert.  
-Beispiel:  
-`ZUL_Update(12345, $_IPS['OLDVALUE'], $_IPS['VALUE']);`
+Es sind keine besonderen Funktionen vorhanden.
