@@ -24,6 +24,14 @@ declare(strict_types=1);
             foreach ($this->GetReferenceList() as $referenceID) {
                 $this->UnregisterReference($referenceID);
             }
+
+            //Unregister all messages in order to readd them
+            foreach ($this->GetMessageList() as $senderID => $messages) {
+                foreach ($messages as $message) {
+                    $this->UnregisterMessage($senderID, $message);
+                }
+            }
+
             //Create our trigger
             $sourceVariable = $this->ReadPropertyInteger('SourceVariable');
             if (IPS_VariableExists($sourceVariable)) {
