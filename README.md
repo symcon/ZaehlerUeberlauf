@@ -6,5 +6,5 @@
 
 Folgende Module beinhaltet das ZaehlerUeberlauf Repository:
 
-- __Zähler-Überlauf__ ([Dokumentation](ZaehlerUeberlauf))  
+- __Zähler-Überlauf__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/zaehlerueberlauf))  
 	Zähler, welche überlaufen können als Zähler dargestellt werden.
