@@ -1,12 +1,12 @@
 {
-	"id": "{173B5799-B5BF-4AB1-BD2D-19C1DD309B9C}",
-	"author": "Symcon GmbH",
-	"name": "ZaehlerUeberlauf",
-	"url": "https://www.symcon.de/",
-	"compatibility": {
-		"version": "4.2"
-	},
-	"version": "1.0",
-	"build": 0,
-	"date": 0
+    "id": "{173B5799-B5BF-4AB1-BD2D-19C1DD309B9C}",
+    "author": "Symcon GmbH",
+    "name": "ZaehlerUeberlauf",
+    "url": "https://www.symcon.de/",
+    "compatibility": {
+        "version": "4.2"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
 }
