@@ -1,0 +1,12 @@
+{
+    "translations": {
+        "de": {
+            "Source": "Quelle",
+            "Maximum value": "Maximalwert",
+            "Counter": "Zähler",
+            "Meter Overflow": "Zählerüberlauf",
+            "https://www.symcon.de/en/service/documentation/module-reference/meter-overflow/": "https://www.symcon.de/de/service/dokumentation/modulreferenz/zaehlerueberlauf/",
+            "MeterOverflow": "ZaehlerUeberlauf"
+        }
+    }
+}

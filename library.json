@@ -1,7 +1,7 @@
 {
     "id": "{173B5799-B5BF-4AB1-BD2D-19C1DD309B9C}",
     "author": "Symcon GmbH",
-    "name": "ZaehlerUeberlauf",
+    "name": "MeterOverflow",
     "url": "https://www.symcon.de/",
     "compatibility": {
         "version": "4.2"

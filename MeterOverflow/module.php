@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class ZaehlerUeberlauf extends IPSModule
+class MeterOverflow extends IPSModule
 {
     public function Create()
     {

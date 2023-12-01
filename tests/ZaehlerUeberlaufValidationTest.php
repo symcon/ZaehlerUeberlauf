@@ -8,8 +8,8 @@ class ZaehlerUeberlaufValidationTest extends TestCaseSymconValidation
     {
         $this->validateLibrary(__DIR__ . '/..');
     }
-    public function testValidateZaehlerUebrlaufModule(): void
+    public function testValidateMeterOverflowModule(): void
     {
-        $this->validateModule(__DIR__ . '/../ZaehlerUeberlauf');
+        $this->validateModule(__DIR__ . '/../MeterOverflow');
     }
 }
