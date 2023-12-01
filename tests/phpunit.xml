@@ -6,7 +6,7 @@
   </php>
   <source>
     <include>
-      <directory suffix=".php">../ZaeherUeberlauf</directory>
+      <directory suffix=".php">../MeterOverflow</directory>
     </include>
   </source>
 </phpunit>

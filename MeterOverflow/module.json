@@ -1,14 +1,14 @@
 {
     "id": "{57A84449-AA15-4423-80B0-3F98C54EAC03}",
-    "name": "ZaehlerUeberlauf",
+    "name": "MeterOverflow",
     "type": 3,
     "vendor": "",
     "aliases": [
-        "Zählerüberlauf"
+        "Meter Overflow"
     ],
     "parentRequirements": [],
     "childRequirements": [],
     "implemented": [],
     "prefix": "ZUL",
-    "url": "https://github.com/symcon/ZaehlerUeberlauf/tree/master/ZaehlerUeberlauf"
+    "url": "https://www.symcon.de/en/service/documentation/module-reference/meter-overflow/"
 }
